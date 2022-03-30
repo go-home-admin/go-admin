@@ -5,68 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c775ee51-b838-497f-9db0-da0768d571eb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env.copy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/common/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/common/auth/context.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/common/time/time.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/entity/demo/user.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/entity/demo/user_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/http/admin/admin_user/controller.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/http/admin/admin_user/info_action.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/http/admin/admin_user/z_inject_gen.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/http/admin/public/controller.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/http/admin/public/login_action.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/http/admin/public/logout_action.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/http/admin/public/z_inject_gen.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/http/api/api_demo/controller.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/http/api/api_demo/home_action.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/http/api/api_demo/z_inject_gen.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/http/api/public/controller.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/http/api/public/home_action.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/http/api/public/z_inject_gen.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/http/kernel.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/http/middleware.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/http/z_inject_gen.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/message/bus/config.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/message/event/sms_task.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/message/event/sms_task_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/message/kernel.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/message/z_inject_gen.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/providers/app_provider.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/providers/response_provider.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/providers/z_inject_gen.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/queue/job/demo_job.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/queue/job/z_inject_gen.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/queue/kernel.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/queue/worker.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/queue/z_inject_gen.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/app.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/app.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/database.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/http.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/mysql.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/generate/proto/admin/admin_user.pb.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/generate/proto/admin/public.pb.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/generate/proto/api/api_public.pb.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/generate/proto/api/demo.pb.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/generate/proto/common/http/http_config.pb.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protobuf/admin/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protobuf/admin/admin_user.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protobuf/admin/public.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protobuf/api/api_public.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protobuf/api/demo.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protobuf/common/http/http_config.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/admin_gen.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/admin_public_gen.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/api_gen.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/z_inject_gen.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +33,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.format.on.save.advertiser.fired" value="true" />
     <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
@@ -103,6 +44,10 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

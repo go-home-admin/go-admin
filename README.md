@@ -11,9 +11,9 @@ Gitee 是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN�
 
 #### 安装教程
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  mac 安装工具链 make mac-install
+2.  环境变量 copy .env.copy .env
+3.  调试启动 make dev
 
 #### 使用说明
 
