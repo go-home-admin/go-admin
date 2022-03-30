@@ -18,9 +18,9 @@ func GetAllProvider() []interface{} {
 func NewKernel() *Kernel {
 	if _KernelSingle == nil {
 		_KernelSingle = &Kernel{}
+		_KernelSingle.httpServer = services.NewHttpServer()
 		_KernelSingle.help = help.NewRouteHelp()
 		_KernelSingle.config = app.GetBean("config").(app.Bean).GetBean("app").(*services.Config)
-		_KernelSingle.httpServer = services.NewHttpServer()
 		app.AfterProvider(_KernelSingle, "")
 	}
 	return _KernelSingle
