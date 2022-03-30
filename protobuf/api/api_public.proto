@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package api;
+
+import "http_config.proto";
+
+option go_package = "gitee.com/ctfang/go-admin/generate/proto/api";
+
+service Public {
+  option (http.RouteGroup) = "api";
+
+  // 首页
+  rpc Home(HomeRequest)returns(HomeResponse){
+    option (http.Get) = "/";
+  }
+}
+
+message HomeRequest {}
+
+message HomeResponse {
+  string start_time = 1;
+  string tip = 2;
+}

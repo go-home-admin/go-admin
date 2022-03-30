@@ -1,0 +1,6 @@
+name: admin-home
+debug: true
+
+servers:
+  http:
+    port: 80

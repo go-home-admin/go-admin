@@ -1,0 +1,33 @@
+// 定义文件级别的Json标签复制
+// @Tag("gorm", "autoUpdateTime:nano")
+
+syntax = "proto3";
+
+package api;
+
+import "http_config.proto";
+
+option go_package = "gitee.com/ctfang/go-admin/generate/proto/api";
+
+service ApiDemo {
+  option (http.RouteGroup) = "api";
+
+  // api demo
+  rpc Home(ApiDemoHomeRequest)returns(ApiDemoHomeResponse){
+    option (http.Get) = "/api/demo";
+  }
+}
+
+message ApiDemoHomeRequest {
+  // @Tag("bson")
+  int64 id = 1;
+}
+
+message ApiDemoHomeResponse {
+  string start_time = 1;
+  string tip = 2;
+
+  oneof data {
+    string name = 3;
+  }
+}

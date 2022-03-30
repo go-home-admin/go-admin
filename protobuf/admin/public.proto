@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+package admin;
+
+import "http_config.proto";
+
+option go_package = "gitee.com/ctfang/go-admin/generate/proto/admin";
+
+service Public {
+  option (http.RouteGroup) = "admin-public";
+
+  // 登陆
+  rpc Login(LoginRequest)returns(LoginResponse){
+    option (http.Post) = "/login";
+  }
+
+  // 退出登陆
+  rpc Logout(LogoutRequest)returns(LogoutResponse){
+    option (http.Post) = "/logout";
+  }
+}
+
+message LoginRequest {
+  // 账户
+  string username = 1;
+  // 密码
+  string password = 2;
+}
+
+message LoginResponse {
+  string token = 1;
+}
+
+message LogoutRequest {}
+
+message LogoutResponse {
+  string tip = 1;
+}
