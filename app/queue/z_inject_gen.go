@@ -19,8 +19,8 @@ func GetAllProvider() []interface{} {
 func NewKernel() *Kernel {
 	if _KernelSingle == nil {
 		_KernelSingle = &Kernel{}
-		_KernelSingle.worker = NewWorker()
 		_KernelSingle.b = broker.NewRedisBroker()
+		_KernelSingle.worker = NewWorker()
 		app.AfterProvider(_KernelSingle, "")
 	}
 	return _KernelSingle

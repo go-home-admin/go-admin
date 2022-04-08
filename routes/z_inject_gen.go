@@ -3,9 +3,9 @@ package routes
 
 import (
 	admin_user "gitee.com/ctfang/go-admin/app/http/admin/admin_user"
-	public "gitee.com/ctfang/go-admin/app/http/admin/public"
+	public1 "gitee.com/ctfang/go-admin/app/http/admin/public"
 	api_demo "gitee.com/ctfang/go-admin/app/http/api/api_demo"
-	public1 "gitee.com/ctfang/go-admin/app/http/api/public"
+	public "gitee.com/ctfang/go-admin/app/http/api/public"
 	app "github.com/go-home-admin/home/bootstrap/services/app"
 )
 
@@ -32,7 +32,7 @@ func NewAdminRoutes() *AdminRoutes {
 func NewAdminPublicRoutes() *AdminPublicRoutes {
 	if _AdminPublicRoutesSingle == nil {
 		_AdminPublicRoutesSingle = &AdminPublicRoutes{}
-		_AdminPublicRoutesSingle.public = public.NewController()
+		_AdminPublicRoutesSingle.public = public1.NewController()
 		app.AfterProvider(_AdminPublicRoutesSingle, "")
 	}
 	return _AdminPublicRoutesSingle
@@ -40,7 +40,7 @@ func NewAdminPublicRoutes() *AdminPublicRoutes {
 func NewApiRoutes() *ApiRoutes {
 	if _ApiRoutesSingle == nil {
 		_ApiRoutesSingle = &ApiRoutes{}
-		_ApiRoutesSingle.public = public1.NewController()
+		_ApiRoutesSingle.public = public.NewController()
 		_ApiRoutesSingle.api_demo = api_demo.NewController()
 		app.AfterProvider(_ApiRoutesSingle, "")
 	}
