@@ -2,3 +2,4 @@
 .env
 routes
 generate
+*_gen.go
