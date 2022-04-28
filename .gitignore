@@ -3,3 +3,4 @@
 routes
 generate
 *_gen.go
+*_gen.json

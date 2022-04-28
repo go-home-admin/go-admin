@@ -22,7 +22,7 @@ make-route:
 	toolset  make:route
 
 make-swagger:
-
+	toolset  make:swagger
 make-bean:
 	toolset  make:bean
 
