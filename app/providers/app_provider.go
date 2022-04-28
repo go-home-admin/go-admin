@@ -9,14 +9,13 @@ import (
 // App 系统引导结构体
 // @Bean
 type App struct {
-	// 框架引导
-	container *services.Container          `inject:""`
-	frame     *providers.FrameworkProvider `inject:""`
+	*services.Container          `inject:""` // test
+	*providers.FrameworkProvider `inject:""`
+	*providers.MysqlProvider     `inject:""`
 
-	// 你的应用引导
-	resp *Response `inject:""`
+	Response `inject:""`
 }
 
 func (a *App) Run(servers []constraint.KernelServer) {
-	a.container.Run(servers)
+	a.Container.Run(servers)
 }

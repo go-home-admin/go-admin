@@ -9,10 +9,17 @@ connections:
     database: env("DB_DATABASE", "home-mysql")
     username: env("DB_USERNAME", "root")
     password: env("DB_PASSWORD", "123456")
-  pg:
-    driver: postgresql
-    port: 5432
-    host: 127.0.0.1
-    database: home-mysql
-    username: root
-    password: 123456
+#  pg:
+#    driver: postgresql
+#    port: 5432
+#    host: 127.0.0.1
+#    database: home-mysql
+#    username: root
+#    password: 123456
+#  mongodb:
+#    driver: mongodb
+#    port: 5432
+#    host: 127.0.0.1
+#    database: home-mysql
+#    username: root
+#    password: 123456
