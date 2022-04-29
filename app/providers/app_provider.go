@@ -6,11 +6,13 @@ import (
 	"github.com/go-home-admin/home/bootstrap/services"
 )
 
-// App 系统引导结构体
-// @Bean
+// App @Bean
+// 系统引导结构体
+// 所有的服务提供者都应该在这里注入(注册)
 type App struct {
-	*services.Container          `inject:""` // test
+	*services.Container          `inject:""`
 	*providers.FrameworkProvider `inject:""`
+	*providers.RouteProvider     `inject:""`
 	*providers.MysqlProvider     `inject:""`
 
 	Response `inject:""`

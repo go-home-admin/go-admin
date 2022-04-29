@@ -13,3 +13,5 @@ require (
 	gorm.io/driver/mysql v1.3.3 // indirect
 	gorm.io/gorm v1.23.4
 )
+
+replace github.com/go-home-admin/home v0.0.0-20220405021323-019297df8b05 => /Users/lv/Desktop/github.com/go-hom-admin/home

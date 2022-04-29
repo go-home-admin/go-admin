@@ -26,7 +26,10 @@ make-swagger:
 make-bean:
 	toolset  make:bean
 
+# 生成全部
+gen:protoc make-route make-bean make-swagger
+
 # 调试启动
-dev:protoc make-route make-bean
+dev:gen
 	go run main.go
 
