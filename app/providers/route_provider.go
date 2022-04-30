@@ -13,4 +13,6 @@ type Route struct {
 
 func (a *Route) Init() {
 	a.LoadRoute(routes.GetAllProvider())
+
+	a.Group("admin").Prefix("/admin")
 }

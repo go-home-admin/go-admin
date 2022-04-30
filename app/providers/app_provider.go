@@ -12,10 +12,10 @@ import (
 type App struct {
 	*services.Container          `inject:""`
 	*providers.FrameworkProvider `inject:""`
-	*providers.RouteProvider     `inject:""`
 	*providers.MysqlProvider     `inject:""`
 
-	Response `inject:""`
+	*Route    `inject:""`
+	*Response `inject:""`
 }
 
 func (a *App) Run(servers []constraint.KernelServer) {
