@@ -14,8 +14,7 @@ type App struct {
 	*providers.FrameworkProvider `inject:""`
 	*providers.MysqlProvider     `inject:""`
 
-	*Route    `inject:""`
-	*Response `inject:""`
+	*Route `inject:""`
 }
 
 func (a *App) Run(servers []constraint.KernelServer) {

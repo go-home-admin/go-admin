@@ -3,11 +3,11 @@ package api_demo
 import (
 	api "gitee.com/ctfang/go-admin/generate/proto/api"
 	gin "github.com/gin-gonic/gin"
-	providers "github.com/go-home-admin/home/app/providers"
+	http "github.com/go-home-admin/home/app/http"
 )
 
 // Home
-func (receiver *Controller) Home(req *api.ApiDemoHomeRequest, ctx *gin.Context) (*api.ApiDemoHomeResponse, error) {
+func (receiver *Controller) Home(req *api.ApiDemoHomeRequest, ctx http.Context) (*api.ApiDemoHomeResponse, error) {
 	// TODO 这里写业务
 	return &api.ApiDemoHomeResponse{}, nil
 }
@@ -17,17 +17,17 @@ func (receiver *Controller) Home(req *api.ApiDemoHomeRequest, ctx *gin.Context) 
 func (receiver *Controller) GinHandleHome(ctx *gin.Context) {
 	req := &api.ApiDemoHomeRequest{}
 	err := ctx.ShouldBind(req)
-
+	context := http.NewContext(ctx)
 	if err != nil {
-		providers.ErrorRequest(ctx, err)
+		context.Fail(err)
 		return
 	}
 
-	resp, err := receiver.Home(req, ctx)
+	resp, err := receiver.Home(req, context)
 	if err != nil {
-		providers.ErrorResponse(ctx, err)
+		context.Fail(err)
 		return
 	}
 
-	providers.SuccessResponse(ctx, resp)
+	context.Success(resp)
 }

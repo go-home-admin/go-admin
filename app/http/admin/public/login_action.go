@@ -3,11 +3,11 @@ package public
 import (
 	admin "gitee.com/ctfang/go-admin/generate/proto/admin"
 	gin "github.com/gin-gonic/gin"
-	providers "github.com/go-home-admin/home/app/providers"
+	http "github.com/go-home-admin/home/app/http"
 )
 
 // Login
-func (receiver *Controller) Login(req *admin.LoginRequest, ctx *gin.Context) (*admin.LoginResponse, error) {
+func (receiver *Controller) Login(req *admin.LoginRequest, ctx http.Context) (*admin.LoginResponse, error) {
 	// TODO 这里写业务
 	return &admin.LoginResponse{}, nil
 }
@@ -17,17 +17,17 @@ func (receiver *Controller) Login(req *admin.LoginRequest, ctx *gin.Context) (*a
 func (receiver *Controller) GinHandleLogin(ctx *gin.Context) {
 	req := &admin.LoginRequest{}
 	err := ctx.ShouldBind(req)
-
+	context := http.NewContext(ctx)
 	if err != nil {
-		providers.ErrorRequest(ctx, err)
+		context.Fail(err)
 		return
 	}
 
-	resp, err := receiver.Login(req, ctx)
+	resp, err := receiver.Login(req, context)
 	if err != nil {
-		providers.ErrorResponse(ctx, err)
+		context.Fail(err)
 		return
 	}
 
-	providers.SuccessResponse(ctx, resp)
+	context.Success(resp)
 }
