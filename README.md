@@ -9,13 +9,14 @@
 
 #### 安装教程
 
-1.  mac 安装工具链 make mac-install
-2.  环境变量 copy .env.copy .env
-3.  调试启动 make dev
+1. mac 安装工具链 make mac-install
+2. 环境变量 copy .env.copy .env
+3. 启动前运行命令, toolset make
+4. 启动go run main.go
 
 #### 使用说明
 
-1.  xxxx
+1.  生成文档: `toolset make:swagger`
 2.  xxxx
 3.  xxxx
 
