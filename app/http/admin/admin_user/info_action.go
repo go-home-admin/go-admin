@@ -8,7 +8,6 @@ import (
 
 // Info
 func (receiver *Controller) Info(req *admin.InfoRequest, ctx http.Context) (*admin.InfoResponse, error) {
-	// TODO 这里写业务
 	return &admin.InfoResponse{}, nil
 }
 

@@ -1,27 +1,19 @@
-package http
+package crontab
 
 import (
-	"github.com/gin-gonic/gin"
 	"github.com/go-home-admin/home/bootstrap/constraint"
 	"github.com/go-home-admin/home/bootstrap/servers"
 )
 
 // Kernel @Bean
 type Kernel struct {
-	*servers.Http `inject:""`
+	*servers.Crontab `inject:""`
 }
 
 func (k *Kernel) Init() {
-	// 全局中间件
-	k.Middleware = []gin.HandlerFunc{
-		Cors(),
-	}
-
-	// 分组中间件, 在路由提供者中自行设置
-	k.MiddlewareGroup = map[string][]gin.HandlerFunc{
-		"admin": {},
-		"api":   {},
-	}
+	//_, _ = k.AddFunc("* * * * * *", func() {
+	//	fmt.Println("ok")
+	//})
 }
 
 // GetServer 提供统一命名规范的独立服务

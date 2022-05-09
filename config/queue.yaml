@@ -1,0 +1,6 @@
+# database.connections.redis
+# 当前版本只支持redis驱动
+connection: redis
+
+queue:
+  
