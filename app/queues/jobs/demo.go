@@ -1,6 +1,7 @@
 package jobs
 
 import (
+	"fmt"
 	"gitee.com/ctfang/go-admin/app/message"
 )
 
@@ -10,5 +11,6 @@ type DemoJob struct {
 }
 
 func (d *DemoJob) Handler() {
-
+	fmt.Println(d.Count)
+	d.Count++
 }

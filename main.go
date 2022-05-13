@@ -4,6 +4,8 @@ import (
 	"embed"
 	"gitee.com/ctfang/go-admin/app/http"
 	"gitee.com/ctfang/go-admin/app/providers"
+	"gitee.com/ctfang/go-admin/app/queues"
+	"github.com/go-home-admin/home/app/election"
 	"github.com/go-home-admin/home/bootstrap/constraint"
 	fp "github.com/go-home-admin/home/bootstrap/providers"
 )
@@ -19,9 +21,10 @@ func main() {
 	app := providers.NewApp()
 
 	app.Run([]constraint.KernelServer{
+		election.GetServer(),
 		// http服务
 		http.GetServer(),
 		// Job消费服务
-		//queue.GetServer(),
+		queues.GetServer(),
 	})
 }

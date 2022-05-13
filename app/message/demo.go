@@ -1,7 +1,8 @@
 package message
 
 type DemoMessage struct {
-	Msg string
+	Msg   string
+	Count int
 }
 
 func (receiver DemoMessage) SetRoute() string {

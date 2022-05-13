@@ -23,9 +23,9 @@ func (c *AdminRoutes) GetRoutes() map[*api.Config]func(c *gin.Context) {
 	return map[*api.Config]func(c *gin.Context){
 		api.Get("/info"):           c.admin_user.GinHandleInfo,
 		api.Get("/system/menu/my"): c.system.GinHandleMyMenu,
-		api.Get("/demo/menu"):      c.demo.GinHandleMenu,
-		api.Get("/demo/ver"):       c.demo.GinHandleVer,
 		api.Get("/demo/post"):      c.demo.GinHandlePost,
 		api.Get("/demo/page"):      c.demo.GinHandlePage,
+		api.Get("/demo/menu"):      c.demo.GinHandleMenu,
+		api.Get("/demo/ver"):       c.demo.GinHandleVer,
 	}
 }
