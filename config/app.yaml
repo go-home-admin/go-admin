@@ -3,4 +3,4 @@ debug: true
 
 servers:
   http:
-    port: 80
+    port: env("HTTP_PORT")

@@ -14,13 +14,16 @@ type Kernel struct {
 func (k *Kernel) Init() {
 	// 全局中间件
 	k.Middleware = []gin.HandlerFunc{
-		Cors(),
+		gin.Logger(),
+		gin.Recovery(),
 	}
 
 	// 分组中间件, 在路由提供者中自行设置
 	k.MiddlewareGroup = map[string][]gin.HandlerFunc{
-		"admin": {},
-		"api":   {},
+		"admin": {
+			Cors(),
+		},
+		"api": {},
 	}
 }
 

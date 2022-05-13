@@ -10,8 +10,8 @@ import (
 
 // @Bean
 type ApiRoutes struct {
-	public   *public.Controller   `inject:""`
 	api_demo *api_demo.Controller `inject:""`
+	public   *public.Controller   `inject:""`
 }
 
 func (c *ApiRoutes) GetGroup() string {
@@ -19,7 +19,7 @@ func (c *ApiRoutes) GetGroup() string {
 }
 func (c *ApiRoutes) GetRoutes() map[*api.Config]func(c *gin.Context) {
 	return map[*api.Config]func(c *gin.Context){
-		api.Get("/"):         c.public.GinHandleHome,
 		api.Get("/api/demo"): c.api_demo.GinHandleHome,
+		api.Get("/"):         c.public.GinHandleHome,
 	}
 }

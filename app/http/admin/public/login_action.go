@@ -9,7 +9,19 @@ import (
 // Login
 func (receiver *Controller) Login(req *admin.LoginRequest, ctx http.Context) (*admin.LoginResponse, error) {
 	// TODO 这里写业务
-	return &admin.LoginResponse{}, nil
+	return &admin.LoginResponse{
+		Token: "SCUI.Administrator.Auth",
+		UserInfo: &admin.Userinfo{
+			UserId:    "1",
+			UserName:  "Administrator",
+			Dashboard: "0",
+			Role: []string{
+				"SA",
+				"admin",
+				"Auditor",
+			},
+		},
+	}, nil
 }
 
 // GinHandleLogin gin原始路由处理

@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+package admin;
+
+import "http_config.proto";
+
+option go_package = "gitee.com/ctfang/go-admin/generate/proto/admin";
+
+service System {
+  option (http.RouteGroup) = "admin";
+
+  // 登陆
+  rpc MyMenu(MyMenuRequest)returns(MyMenuResponse){
+    option (http.Get) = "/system/menu/my";
+  }
+}
+
+message MyMenuRequest {}
+
+message MyMenuResponse {
+  repeated Menu menu = 1;
+  repeated string permissions = 2;
+}
+
+message Meta {
+  string title = 1;
+  string icon = 2;
+  string type = 3;
+  bool affix = 4;
+}
+
+message Menu {
+  string name = 1;
+  string path = 2;
+  Meta meta = 3;
+  string component = 4;
+  repeated Menu children = 6;
+}

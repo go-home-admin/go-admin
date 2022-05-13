@@ -29,6 +29,15 @@ message LoginRequest {
 
 message LoginResponse {
   string token = 1;
+
+  Userinfo userInfo = 2;
+}
+
+message Userinfo {
+  string userId = 1;
+  string userName = 2;
+  string dashboard = 3;
+  repeated string role = 4;
 }
 
 message LogoutRequest {}

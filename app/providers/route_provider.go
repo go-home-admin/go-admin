@@ -19,4 +19,5 @@ func (a *Route) Init() {
 	a.LoadRoute(routes.GetAllProvider())
 
 	a.Group("admin").Prefix("/admin").Middleware("admin")
+	a.Group("admin-public").Prefix("/admin")
 }
