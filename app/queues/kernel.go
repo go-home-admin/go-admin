@@ -13,6 +13,8 @@ type Kernel struct {
 
 func (k *Kernel) Init() {
 	k.Listen(jobs.GetAllProvider())
+
+	k.StartBroadcast()
 }
 
 func GetServer() constraint.KernelServer {

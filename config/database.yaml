@@ -9,6 +9,14 @@ connections:
     database: env("DB_DATABASE", "home-mysql")
     username: env("DB_USERNAME", "root")
     password: env("DB_PASSWORD", "123456")
+    # 生成orm辅助关系
+    helper:
+      admin_menu:
+        - with: belongs_to
+          table: admin_role_menu
+          alias: AdminRoleMenu
+          gorm: "foreignKey:id;references:menu_id"
+
   redis:
     driver: redis
     host: 127.0.0.1

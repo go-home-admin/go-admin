@@ -17,7 +17,7 @@ func (c *AdminPublicRoutes) GetGroup() string {
 }
 func (c *AdminPublicRoutes) GetRoutes() map[*api.Config]func(c *gin.Context) {
 	return map[*api.Config]func(c *gin.Context){
-		api.Post("/login"):  c.public.GinHandleLogin,
 		api.Post("/logout"): c.public.GinHandleLogout,
+		api.Post("/login"):  c.public.GinHandleLogin,
 	}
 }
