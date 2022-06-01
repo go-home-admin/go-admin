@@ -3,7 +3,7 @@ debug: true
 
 servers:
   http:
-    port: env("HTTP_PORT")
+    port: env("HTTP_PORT", "80")
 
 log:
   level: trace
