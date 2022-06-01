@@ -4,7 +4,7 @@ package http;
 
 import "google/protobuf/descriptor.proto";
 
-option go_package = "gitee.com/ctfang/go-admin/generate/proto/common/http";
+option go_package = "github.com/go-home-admin/go-admin/generate/proto/common/http";
 
 extend google.protobuf.ServiceOptions {
   // 路由分组名字

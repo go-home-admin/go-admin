@@ -1,7 +1,7 @@
 package providers
 
 import (
-	"gitee.com/ctfang/go-admin/routes"
+	"github.com/go-home-admin/go-admin/routes"
 	"github.com/go-home-admin/home/bootstrap/providers"
 )
 

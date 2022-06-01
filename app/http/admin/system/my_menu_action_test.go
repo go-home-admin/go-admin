@@ -2,9 +2,9 @@ package system
 
 import (
 	"encoding/json"
-	"gitee.com/ctfang/go-admin/app/entity/mysql"
-	"gitee.com/ctfang/go-admin/generate/proto/admin"
 	"github.com/gin-gonic/gin"
+	"github.com/go-home-admin/go-admin/app/entity/mysql"
+	"github.com/go-home-admin/go-admin/generate/proto/admin"
 	"github.com/go-home-admin/home/app/http"
 	"github.com/go-home-admin/home/bootstrap/services/database"
 	"github.com/go-home-admin/home/bootstrap/utils"

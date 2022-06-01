@@ -1,7 +1,7 @@
 package queues
 
 import (
-	"gitee.com/ctfang/go-admin/app/queues/jobs"
+	"github.com/go-home-admin/go-admin/app/queues/jobs"
 	"github.com/go-home-admin/home/bootstrap/constraint"
 	"github.com/go-home-admin/home/bootstrap/servers"
 )

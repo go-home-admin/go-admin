@@ -1,4 +1,4 @@
-module gitee.com/ctfang/go-admin
+module github.com/go-home-admin/go-admin
 
 go 1.16
 

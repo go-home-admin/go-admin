@@ -2,7 +2,7 @@ package jobs
 
 import (
 	"fmt"
-	"gitee.com/ctfang/go-admin/app/message"
+	"github.com/go-home-admin/go-admin/app/message"
 )
 
 // DemoJob @Bean

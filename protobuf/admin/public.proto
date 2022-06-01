@@ -4,7 +4,7 @@ package admin;
 
 import "http_config.proto";
 
-option go_package = "gitee.com/ctfang/go-admin/generate/proto/admin";
+option go_package = "github.com/go-home-admin/go-admin/generate/proto/admin";
 
 service Public {
   option (http.RouteGroup) = "admin-public";
