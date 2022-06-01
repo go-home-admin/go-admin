@@ -1,8 +1,8 @@
 package public
 
 import (
-	admin "gitee.com/ctfang/go-admin/generate/proto/admin"
 	gin "github.com/gin-gonic/gin"
+	admin "github.com/go-home-admin/go-admin/generate/proto/admin"
 	http "github.com/go-home-admin/home/app/http"
 )
 

@@ -4,7 +4,7 @@ package api;
 
 import "http_config.proto";
 
-option go_package = "gitee.com/ctfang/go-admin/generate/proto/api";
+option go_package = "github.com/go-home-admin/go-admin/generate/proto/api";
 
 service Public {
   option (http.RouteGroup) = "api";

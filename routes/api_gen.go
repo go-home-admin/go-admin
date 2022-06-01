@@ -2,9 +2,9 @@
 package routes
 
 import (
-	api_demo "gitee.com/ctfang/go-admin/app/http/api/api_demo"
-	public "gitee.com/ctfang/go-admin/app/http/api/public"
 	gin "github.com/gin-gonic/gin"
+	api_demo "github.com/go-home-admin/go-admin/app/http/api/api_demo"
+	public "github.com/go-home-admin/go-admin/app/http/api/public"
 	api "github.com/go-home-admin/home/bootstrap/http/api"
 )
 

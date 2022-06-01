@@ -2,10 +2,10 @@
 package routes
 
 import (
-	admin_user "gitee.com/ctfang/go-admin/app/http/admin/admin_user"
-	demo "gitee.com/ctfang/go-admin/app/http/admin/demo"
-	system "gitee.com/ctfang/go-admin/app/http/admin/system"
 	gin "github.com/gin-gonic/gin"
+	admin_user "github.com/go-home-admin/go-admin/app/http/admin/admin_user"
+	demo "github.com/go-home-admin/go-admin/app/http/admin/demo"
+	system "github.com/go-home-admin/go-admin/app/http/admin/system"
 	api "github.com/go-home-admin/home/bootstrap/http/api"
 )
 

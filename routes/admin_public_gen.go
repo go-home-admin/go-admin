@@ -2,8 +2,8 @@
 package routes
 
 import (
-	public "gitee.com/ctfang/go-admin/app/http/admin/public"
 	gin "github.com/gin-gonic/gin"
+	public "github.com/go-home-admin/go-admin/app/http/admin/public"
 	api "github.com/go-home-admin/home/bootstrap/http/api"
 )
 
