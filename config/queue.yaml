@@ -3,4 +3,7 @@
 connection: redis
 
 queue:
-  
+  stream_name: home_default_stream
+  group_name: home_default_group
+  consumer_name: home_default_{hostname}
+  stream_limit: 10000

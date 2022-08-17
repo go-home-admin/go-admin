@@ -30,7 +30,7 @@
 ## 快速入门
 ### 添加新的模块和api
 在home/protobuf创建新的目录admin, 创建proto文件, 同时设置和目录一致的package和option
-~~~~go
+~~~~protobuf
 package admin;
 option go_package = "github.com/go-home-admin/home/generate/proto/admin";
 service Public {

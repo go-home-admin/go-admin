@@ -13,7 +13,7 @@ type Kernel struct {
 
 func (k *Kernel) Init() {
 	k.Listen(jobs.GetAllProvider())
-
+	// 打开广播进程
 	k.StartBroadcast()
 }
 
