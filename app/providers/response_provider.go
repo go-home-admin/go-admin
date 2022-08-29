@@ -21,6 +21,8 @@ func (r *Response) Init() {
 
 type Ctx struct {
 	*gin.Context
+	UserID   uint64
+	UserInfo interface{}
 }
 
 func (receiver Ctx) Success(data interface{}) {
@@ -43,10 +45,10 @@ func (receiver Ctx) Gin() *gin.Context {
 }
 
 func (receiver Ctx) User() interface{} {
-	return receiver.Context
+	return receiver.UserInfo
 }
 func (receiver Ctx) Id() uint64 {
-	return 0
+	return receiver.UserID
 }
 
 func (receiver Ctx) Token() string {
