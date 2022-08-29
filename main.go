@@ -8,6 +8,7 @@ import (
 	"github.com/go-home-admin/home/app/election"
 	"github.com/go-home-admin/home/bootstrap/constraint"
 	fp "github.com/go-home-admin/home/bootstrap/providers"
+	"github.com/sirupsen/logrus"
 )
 
 //go:embed config
@@ -21,7 +22,10 @@ func main() {
 	app := providers.NewApp()
 
 	app.Run([]constraint.KernelServer{
-		election.GetServer(),
+		election.GetServer(func() {
+			logrus.Info("我是老大")
+			logrus.Info("我才可以启动定时服务")
+		}),
 		// http服务
 		http.GetServer(),
 		// Job消费服务
