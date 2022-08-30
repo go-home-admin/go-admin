@@ -1,6 +1,6 @@
 .idea
 .env
-routes
-generate
-*_gen.go
-*_gen.json
+# routes
+# generate
+# _gen.go
+_gen.json
