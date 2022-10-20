@@ -12,10 +12,14 @@ extend google.protobuf.ServiceOptions {
 }
 
 extend google.protobuf.MethodOptions {
-  string Get = 50000;
-  string Head = 50001;
-  string Post = 50002;
-  string Put = 50003;
-  string Delete = 50004;
-  string Options = 50005;
+  repeated string Get = 50000;
+  repeated string Head = 50001;
+  repeated string Post = 50002;
+  repeated string Put = 50003;
+  repeated string Delete = 50004;
+  repeated string Options = 50005;
+  // 一次定义多种http类型
+  string Any = 50006;
+  // 资源类型curd
+  string Resource = 50007;
 }

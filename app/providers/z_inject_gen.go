@@ -4,7 +4,6 @@ package providers
 import (
 	providers_2 "github.com/go-home-admin/home/bootstrap/providers"
 	services "github.com/go-home-admin/home/bootstrap/services"
-	telescope "github.com/go-home-admin/telescope"
 )
 
 var _AppSingle *App
@@ -30,7 +29,6 @@ func NewApp() *App {
 		_AppSingle.RedisProvider = providers_2.NewRedisProvider()
 		_AppSingle.Route = NewRoute()
 		_AppSingle.Response = NewResponse()
-		_AppSingle.Providers = telescope.NewProviders()
 		providers_2.AfterProvider(_AppSingle, "")
 	}
 	return _AppSingle
