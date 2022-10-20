@@ -8,7 +8,10 @@ option go_package = "github.com/go-home-admin/go-admin/generate/proto/common/htt
 
 extend google.protobuf.ServiceOptions {
   // 路由分组名字
-  string RouteGroup = 50000;
+  string RouteGroup = 51000;
+
+  // 资源类型curd
+  string Resource = 51001;
 }
 
 extend google.protobuf.MethodOptions {
@@ -20,6 +23,4 @@ extend google.protobuf.MethodOptions {
   repeated string Options = 50005;
   // 一次定义多种http类型
   string Any = 50006;
-  // 资源类型curd
-  string Resource = 50007;
 }
