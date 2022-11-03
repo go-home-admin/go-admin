@@ -5,7 +5,6 @@ ATDIR := $(shell pwd)
 # export GOPATH=$HOME/go PATH=$PATH:$GOPATH/bin
 mac-install:
 	protoc --version || brew install protobuf						# mac下自动安装, win环境手动安装
-	go get -u google.golang.org/protobuf/proto
 	go install github.com/golang/protobuf/protoc-gen-go@latest		# proto 工具链, 生成go代码插件
 	go install github.com/go-home-admin/toolset@latest
 
