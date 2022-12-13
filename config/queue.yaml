@@ -7,3 +7,9 @@ queue:
   group_name: home_default_group
   consumer_name: home_default_{hostname}
   stream_limit: 10000
+  
+# 延时队列配置
+delay:
+  auth_migrate: true
+  connect: mysql
+  interval: 60
