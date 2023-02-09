@@ -12,7 +12,7 @@
 
 1. mac 安装工具链 make mac-install
 2. 环境变量 copy .env.copy .env
-3. 启动前运行命令, toolset make
+3. 启动前运行命令, go mod tidy
 4. 启动go run main.go
 
 #### 使用说明
