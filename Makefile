@@ -14,15 +14,15 @@ make-orm:
 
 # 只维护 protoc
 protoc:
-	toolset  make:protoc
+	toolset make:protoc
 
 make-route:
-	toolset  make:route
+	toolset make:route
 
 make-swagger:
-	toolset  make:swagger
+	toolset make:swagger
 make-bean:
-	toolset  make:bean
+	toolset make:bean
 
 # 生成全部
 gen:protoc make-route make-bean make-swagger

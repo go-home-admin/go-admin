@@ -4,7 +4,7 @@ url: env("APP_URL", "https://127.0.0.1")
 
 servers:
   http:
-    port: env("HTTP_PORT", 80)
+    port: env("HTTP_PORT", 8080)
 
 log:
   path: env("LOG_PATH", "/data/logs/app.log")
