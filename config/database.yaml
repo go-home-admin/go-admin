@@ -2,13 +2,13 @@ default: mysql
 
 # 所有数据库连接
 connections:
-#  mysql:
-#    driver: mysql
-#    host: env("DB_HOST", "127.0.0.1")
-#    port: env("DB_PORT", "3306")
-#    database: env("DB_DATABASE", "home-mysql")
-#    username: env("DB_USERNAME", "root")
-#    password: env("DB_PASSWORD", "123456")
+  test:
+    driver: mysql
+    host: env("DB_HOST", "127.0.0.1")
+    port: env("DB_PORT", "3306")
+    database: env("DB_DATABASE", "home-mysql")
+    username: env("DB_USERNAME", "root")
+    password: env("DB_PASSWORD", "123456")
 #
 #  redis:
 #    driver: redis
@@ -24,8 +24,8 @@ connections:
 #    password: 123456
 #  mongodb:
 #    driver: mongodb
-#    port: 5432
-#    host: 127.0.0.1
-#    database: home-mysql
-#    username: root
-#    password: 123456
+#    port: env("MGO_PORT", "27017")
+#    host: env("MGO_HOST", "127.0.0.1")
+#    database: env("MGO_DATABASE", "dynamodb")
+#    username: env("MGO_USERNAME", "root")
+#    password: env("MGO_PASSWORD", "123456")

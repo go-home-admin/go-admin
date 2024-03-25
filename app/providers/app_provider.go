@@ -22,3 +22,7 @@ type App struct {
 func (a *App) Run(servers []constraint.KernelServer) {
 	a.Container.Run(servers)
 }
+
+func (a *App) Exit() {
+
+}
