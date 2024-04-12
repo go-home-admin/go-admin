@@ -15,8 +15,15 @@ type App struct {
 	*providers.MysqlProvider     `inject:""`
 	*providers.RedisProvider     `inject:""`
 
-	*Route    `inject:""`
 	*Response `inject:""`
+}
+
+func (a *App) Init() {
+
+}
+
+func (a *App) Boot() {
+
 }
 
 func (a *App) Run(servers []constraint.KernelServer) {
