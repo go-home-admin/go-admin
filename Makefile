@@ -8,6 +8,13 @@ mac-install:
 	go install github.com/golang/protobuf/protoc-gen-go@latest		# proto 工具链, 生成go代码插件
 	go install github.com/go-home-admin/toolset@latest
 
+build:
+	GOOS=linux GOARCH=amd64 CGO_ENABLED=0 go build -ldflags="-w -s" -o ./build/app ./
+
+build_gcc:
+	GOOS=linux GOARCH=amd64 CGO_ENABLED=1 CC=x86_64-linux-musl-gcc  CXX=x86_64-linux-musl-g++ go build --ldflags="-linkmode external -extldflags '-static'" -o  ./build/app ./
+
+
 # Orm自动维护
 make-orm:
 	toolset make:orm
