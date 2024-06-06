@@ -7,10 +7,10 @@ go 1.18
 
 require (
 	github.com/gin-gonic/gin v1.9.1
-	github.com/go-home-admin/home v0.5.15
-	github.com/sirupsen/logrus v1.8.1
-	google.golang.org/protobuf v1.30.0
-	gorm.io/gorm v1.23.4
+	github.com/go-home-admin/home v0.5.17
+	github.com/sirupsen/logrus v1.9.0
+	google.golang.org/protobuf v1.34.1
+	gorm.io/gorm v1.23.8
 )
 
 require (
@@ -20,6 +20,7 @@ require (
 	github.com/dgryski/go-rendezvous v0.0.0-20200823014737-9f7001d12a5f // indirect
 	github.com/gabriel-vasile/mimetype v1.4.2 // indirect
 	github.com/gin-contrib/sse v0.1.0 // indirect
+	github.com/go-home-admin/telescope v1.2.2 // indirect
 	github.com/go-playground/locales v0.14.1 // indirect
 	github.com/go-playground/universal-translator v0.18.1 // indirect
 	github.com/go-playground/validator/v10 v10.14.0 // indirect

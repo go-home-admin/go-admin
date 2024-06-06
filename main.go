@@ -22,8 +22,8 @@ func main() {
 		// http服务
 		http.GetServer(),
 		//election.GetServer(func() {
-		//	logrus.Info("我是老大")
-		//	logrus.Info("我才可以启动定时服务")
+		//	logrus.Info("选举出一台存活机器启动特殊服务, 例如定时服务")
+		//	crontab.GetServer()
 		//}),
 		// Job消费服务
 		// queues.GetServer(),

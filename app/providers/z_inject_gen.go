@@ -2,6 +2,7 @@
 package providers
 
 import (
+	web "github.com/go-home-admin/go-admin/web"
 	providers_0 "github.com/go-home-admin/home/bootstrap/providers"
 	services "github.com/go-home-admin/home/bootstrap/services"
 )
@@ -23,9 +24,8 @@ func NewApp() *App {
 		_AppSingle = &App{}
 		_AppSingle.Container = services.NewContainer()
 		_AppSingle.FrameworkProvider = providers_0.NewFrameworkProvider()
-		_AppSingle.MysqlProvider = providers_0.NewMysqlProvider()
-		_AppSingle.RedisProvider = providers_0.NewRedisProvider()
-		_AppSingle.Response = NewResponse()
+		_AppSingle.SwaggerUI = *web.NewSwaggerUI()
+		_AppSingle.AdminUI = *web.NewAdminUI()
 		providers_0.AfterProvider(_AppSingle, "")
 	}
 	return _AppSingle

@@ -34,7 +34,8 @@ func (k *Kernel) Init() {
 }
 
 func (k *Kernel) Boot() {
-
+	//可以在这里定义不需要自动化文档的路由
+	//k.GET("/demo/boot", func(context *gin.Context) {})
 }
 
 func (k *Kernel) Exit() {

@@ -27,7 +27,7 @@ make-route:
 	toolset make:route
 
 make-swagger:
-	toolset make:swagger
+	toolset make:swagger -out=@root/web/swagger/swagger.json
 make-bean:
 	toolset make:bean
 
