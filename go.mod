@@ -1,13 +1,13 @@
 module github.com/go-home-admin/go-admin
 
-go 1.18
+go 1.23.0
 
 // 开发阶段, 把框架引导部分手动覆盖
 // replace github.com/go-home-admin/home v0.0.0-20220405021323-019297df8b05 => ../home
 
 require (
 	github.com/gin-gonic/gin v1.9.1
-	github.com/go-home-admin/home v0.5.17
+	github.com/go-home-admin/home v0.5.22
 	github.com/sirupsen/logrus v1.9.0
 	google.golang.org/protobuf v1.34.1
 	gorm.io/gorm v1.23.8
